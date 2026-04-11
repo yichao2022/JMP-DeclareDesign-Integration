@@ -8,6 +8,10 @@ format:
     css: styles.css
     toc: true
     code-fold: true
+    code-links:
+      - text: "Source Code"
+        icon: github
+        href: "https://github.com/yichao2022/JMP-DeclareDesign-Integration"
     self-contained: true
     number-sections: false
 execute:
