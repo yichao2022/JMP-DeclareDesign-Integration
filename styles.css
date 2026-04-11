@@ -1,0 +1,20 @@
+/* High contrast overrides for Slate theme */
+body, p, li, td, th {
+  color: #f8f9fa !important; /* 明亮的灰白色，保护视力同时拉高对比度 */
+}
+
+h1, h2, h3, h4, h5, h6, .title {
+  color: #ffffff !important; /* 纯白，突出标题层级 */
+}
+
+.subtitle, .quarto-title-meta-heading, .quarto-title-meta-contents p {
+  color: #e9ecef !important;
+}
+
+#TOC a {
+  color: #dee2e6 !important; /* 侧边栏 TOC 亮度提升 */
+}
+
+#TOC a:hover, #TOC a.active {
+  color: #ffffff !important;
+}

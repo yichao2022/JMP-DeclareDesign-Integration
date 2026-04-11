@@ -5,6 +5,7 @@ author: "Yichao Jin"
 format:
   html:
     theme: slate
+    css: styles.css
     toc: true
     code-fold: true
     self-contained: true
