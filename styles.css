@@ -1,20 +1,41 @@
-/* High contrast overrides for Slate theme */
-body, p, li, td, th {
-  color: #f8f9fa !important; /* 明亮的灰白色，保护视力同时拉高对比度 */
+/* High contrast overrides for Slate theme - Ultra White & Deep Black */
+body {
+  background-color: #0d1117 !important; /* 接近 GitHub Dark 的深色，或者用 #000000 */
+  color: #ffffff !important;
+}
+
+body, p, li, td, th, section {
+  color: #ffffff !important; /* 全面提升至纯白 */
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-  color: #ffffff !important; /* 纯白，突出标题层级 */
+  color: #ffffff !important;
+  font-weight: 700;
 }
 
-.subtitle, .quarto-title-meta-heading, .quarto-title-meta-contents p {
-  color: #e9ecef !important;
+.subtitle, .quarto-title-meta-heading, .quarto-title-meta-contents p, .quarto-title-meta-contents {
+  color: #ffffff !important;
+  opacity: 0.9; /* 稍微透一点，保持层次感但依然很白 */
 }
 
 #TOC a {
-  color: #dee2e6 !important; /* 侧边栏 TOC 亮度提升 */
+  color: #adb5bd !important; /* 侧边栏 TOC 亮度提升，但略低于正文以示区分 */
 }
 
 #TOC a:hover, #TOC a.active {
+  color: #ffffff !important;
+  text-decoration: underline;
+}
+
+/* 针对 Quarto 特有组件的白化 */
+.navbar, .sidebar, .quarto-secondary-nav {
+  background-color: #000000 !important;
+}
+
+.callout.callout-style-default {
+  border-left-color: #ffffff !important;
+}
+
+.callout-body {
   color: #ffffff !important;
 }
